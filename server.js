@@ -1,3 +1,4 @@
+const models = require("./models/workout.js");
 const express = require("express");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 8080;
@@ -15,4 +16,4 @@ mongoose.connect(URL, {
     useFindAndModify: false
   })
 
-app.listen(PORT, () => {console.log("app running queen!")})
+app.listen(PORT, () => {console.log("app running queen!")}) 
