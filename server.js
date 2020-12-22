@@ -11,11 +11,12 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(express.static("public"))
 
-const URL = process.env.MONGODBURL || "mongodb://localhost/workouts"
+const URL = process.env.MONGODB_URI || "mongodb://localhost/workouts"
 
 mongoose.connect(URL, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
+    useCreateIndex: true,
     useFindAndModify: false
   })
 

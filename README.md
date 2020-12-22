@@ -11,5 +11,5 @@ To use this application, either insert/update workouts through the front end or 
 
 Github repository link: https://github.com/jordanmorse/fitnesstracker
 
-Deployed application: 
+Deployed application: https://thawing-earth-62239.herokuapp.com/
 
